@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLTextToolTXT", "ConvertTool\PLTextToolTXT.csproj", "{44EEB09C-2E9E-43E2-8AB8-9A4535FECAE6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupConvertTool", "SetupConvertTool\SetupConvertTool.vdproj", "{BCA9CD92-7CC6-4030-88BB-CB6EF440067A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLTextToolMain", "XingConvertTool\PLTextToolMain.csproj", "{01DB9186-7758-4272-A3AB-0EFA6592E940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLTextToolTSV", "ConvertToolTSV\PLTextToolTSV.csproj", "{0F27A728-BE46-4422-B0E3-91A8629AF7E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLTextToolCommand", "ConvertToolComand\PLTextToolCommand.csproj", "{ACE67490-6AB1-4188-AE74-AF3257B66759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkTSV", "checkTSV\checkTSV.csproj", "{BF73FA87-38AA-4B71-8BE8-A45D227E0241}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44EEB09C-2E9E-43E2-8AB8-9A4535FECAE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44EEB09C-2E9E-43E2-8AB8-9A4535FECAE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44EEB09C-2E9E-43E2-8AB8-9A4535FECAE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44EEB09C-2E9E-43E2-8AB8-9A4535FECAE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA9CD92-7CC6-4030-88BB-CB6EF440067A}.Debug|Any CPU.ActiveCfg = Debug
+		{BCA9CD92-7CC6-4030-88BB-CB6EF440067A}.Release|Any CPU.ActiveCfg = Release
+		{01DB9186-7758-4272-A3AB-0EFA6592E940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DB9186-7758-4272-A3AB-0EFA6592E940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DB9186-7758-4272-A3AB-0EFA6592E940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DB9186-7758-4272-A3AB-0EFA6592E940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F27A728-BE46-4422-B0E3-91A8629AF7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F27A728-BE46-4422-B0E3-91A8629AF7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F27A728-BE46-4422-B0E3-91A8629AF7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F27A728-BE46-4422-B0E3-91A8629AF7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACE67490-6AB1-4188-AE74-AF3257B66759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE67490-6AB1-4188-AE74-AF3257B66759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE67490-6AB1-4188-AE74-AF3257B66759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE67490-6AB1-4188-AE74-AF3257B66759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF73FA87-38AA-4B71-8BE8-A45D227E0241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF73FA87-38AA-4B71-8BE8-A45D227E0241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF73FA87-38AA-4B71-8BE8-A45D227E0241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF73FA87-38AA-4B71-8BE8-A45D227E0241}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92D26DD3-E2C9-489D-A652-D4F11620D01B}
+	EndGlobalSection
+EndGlobal

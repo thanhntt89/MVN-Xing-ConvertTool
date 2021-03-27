@@ -1,0 +1,1 @@
+REG DELETE "HKEY_CURRENT_USER\Software\XingConvertTool"

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F27A728-BE46-4422-B0E3-91A8629AF7E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PLTextToolTSV</RootNamespace>
+    <AssemblyName>PLTextToolTSV</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="7zip\Common\CommandLineParser.cs" />
+    <Compile Include="7zip\Common\CRC.cs" />
+    <Compile Include="7zip\Common\InBuffer.cs" />
+    <Compile Include="7zip\Common\OutBuffer.cs" />
+    <Compile Include="7zip\Compress\LZMA\LzmaBase.cs" />
+    <Compile Include="7zip\Compress\LZMA\LzmaDecoder.cs" />
+    <Compile Include="7zip\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="7zip\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="7zip\Compress\LZ\LzBinTree.cs" />
+    <Compile Include="7zip\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="7zip\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="7zip\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="7zip\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="7zip\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="7zip\ICoder.cs" />
+    <Compile Include="Common\Constant.cs" />
+    <Compile Include="Common\EnumData.cs" />
+    <Compile Include="Common\EnumExtension.cs" />
+    <Compile Include="Common\EnumType.cs" />
+    <Compile Include="Common\FontCodeCollection.cs" />
+    <Compile Include="Common\OriginalSongKeyCollection.cs" />
+    <Compile Include="Common\SongOwnerCompanyCollection.cs" />
+    <Compile Include="Decode\Decode.cs" />
+    <Compile Include="Decode\DecodeManagement.cs" />
+    <Compile Include="Decode\DecodePLF.cs" />
+    <Compile Include="Decode\DecodePLG.cs" />
+    <Compile Include="FileType\PLF\CAHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\CHFHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\ChfServiceStruct.cs" />
+    <Compile Include="FileType\PLF\DB2HeaderStruct.cs" />
+    <Compile Include="FileType\PLF\DBHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\DivHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\EXPHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\EXPRecordStruct.cs" />
+    <Compile Include="FileType\PLF\GNCInfoStruct.cs" />
+    <Compile Include="FileType\PLF\GTCHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\GTNHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\MDTHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\MDXHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\MIDDataStruct.cs" />
+    <Compile Include="FileType\PLF\MIDHeaderOffsetStruct.cs" />
+    <Compile Include="FileType\PLF\MIDHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\MIDIHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\MTHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\PlfDivideDataStruct.cs" />
+    <Compile Include="FileType\PLF\PLFHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\SD3HeaderStruct.cs" />
+    <Compile Include="FileType\PLF\SN3HeaderStruct.cs" />
+    <Compile Include="FileType\PLF\SN3HeaderSubStruct.cs" />
+    <Compile Include="FileType\PLF\SNGBlockDispStruct.cs" />
+    <Compile Include="FileType\PLF\SNGBlockMojiStruct.cs" />
+    <Compile Include="FileType\PLF\SNGBlockSpeedStruct.cs" />
+    <Compile Include="FileType\PLF\SNGDataHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\SNGDispTimingStruct.cs" />
+    <Compile Include="FileType\PLF\SNGHeaderStruct.cs" />
+    <Compile Include="FileType\PLF\SNGSpeedStruct.cs" />
+    <Compile Include="FileType\PLF\TLPHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\CAHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\CHGHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\CHGServiceStruct.cs" />
+    <Compile Include="FileType\PLG\DB2HeaderStruct.cs" />
+    <Compile Include="FileType\PLG\DBHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\DIVHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\EXPHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\EXPRecordStruct.cs" />
+    <Compile Include="FileType\PLG\MDTHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\MDXHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\MIDDataStruct.cs" />
+    <Compile Include="FileType\PLG\MIDHeaderOffsetStruct.cs" />
+    <Compile Include="FileType\PLG\MIDHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\MIDIHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\MTHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\PLGDivideDataStruct.cs" />
+    <Compile Include="FileType\PLG\PLGHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\SD3HeaderStruct.cs" />
+    <Compile Include="FileType\PLG\SHHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\SN3HeaderStruct.cs" />
+    <Compile Include="FileType\PLG\SN3HeaderSubStruct.cs" />
+    <Compile Include="FileType\PLG\SNGDtaHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\SNGHeaderStruct.cs" />
+    <Compile Include="FileType\PLG\TLPHeaderStruct.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemEvent.cs" />
+    <Compile Include="Utils\ByteUtil.cs" />
+    <Compile Include="Utils\LogWriter.cs" />
+    <Compile Include="Utils\PLCUtil.cs" />
+    <Compile Include="Utils\PLEUtil.cs" />
+    <Compile Include="Utils\PLFUtil.cs" />
+    <Compile Include="Utils\PLGUtil.cs" />
+    <Compile Include="Utils\Utilities.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
